@@ -1,0 +1,9 @@
+name=input("enter your choice:")
+if name=="strawberry":
+    print("it is children flavour")
+elif name=="chocolate":
+    print("it is too much tasty")
+elif name=="vennela":
+    print("buy 1 get one free")
+else:
+    print("other flavours are not recomondded")
