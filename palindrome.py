@@ -1,11 +1,16 @@
-n = int(input("Enter a number: ")) 
-dup = n
-sum = 0 
-while n > 0:
-    rem = n % 10
-    sum = (sum * 10) + rem 
-    n = n // 10
-if dup == sum:
-    print("The given number is a palindrome")
+def pal(s):
+    s=s.lower()
+    if len(s)<=1:
+        return True
+    elif s[0]!=s[-1]:
+        return False
+    else:
+        return pal(s[1:-1])
+myinput=input("enter a string:")  
+if pal(myinput):
+    
+    
+    print(f"{myinput}is a palindrome")
 else:
-    print("The given number is not a palindrome")
+         
+    print(f"{myinput}is not a palindrome")
