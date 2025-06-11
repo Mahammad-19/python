@@ -1,0 +1,5 @@
+f=open("C:\\Users\\Administrator\\Desktop\\mahammad.txt",'r')
+data=f.read()
+lw=data.split()
+print("Total number of words in agiven file is:",len(lw))
+print('Available words are :',lw)
